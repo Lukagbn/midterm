@@ -29,6 +29,9 @@
   font-family: "Poppins-Regular";
   @apply leading-[100%] text-[rgba(0,0,0,1)];
 }
+button {
+  @apply cursor-pointer;
+}
 nav ul li img {
   @apply w-6;
 }
@@ -53,14 +56,17 @@ nav ul li span {
 }
 h1 {
   font-family: "Poppins-SemiBold";
+  @apply text-[rgba(0,0,0,8)];
 }
-h1,
 p {
-  @apply text-[rgba(0,0,0,0.8)];
+  @apply text-[rgba(89,89,89,0.8)];
 }
 h3,
 h4 {
   font-family: "Poppins-Medium";
+}
+.main-heading-text-wrapper p {
+  @apply text-[rgba(0,0,0,0.6)];
 }
 .location-form label {
   font-family: "Poppins-Medium";
@@ -87,7 +93,7 @@ h4 {
   @apply cursor-pointer;
 }
 .price {
-  @apply text-[14px];
+  @apply text-[14px] text-[rgba(0,0,0,8)];
 }
 .price span {
   font-family: "Poppins-Medium";
@@ -110,6 +116,9 @@ h2 {
 .card-footer {
   @apply pt-6 m-0;
 }
+.card-footer p {
+  @apply text-[rgba(0,0,0,8)];
+}
 .card p {
   @apply lg:text-[14px];
 }
@@ -127,17 +136,19 @@ footer ul li a {
 .card-details-container p {
   font-family: "Poppins-Medium";
 }
-/* hide overflow */
+.card-details-categories-wrapper {
+  gap: 15px;
+  justify-content: space-between;
+}
+.card-details-categories-wrapper p {
+  @apply text-[14px];
+}
 .card-details-categories-wrapper p {
   @apply leading-[23px];
 }
-.card-container-details,
+/* hide overflow */
 .card-details-text-scroll {
   overflow: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
-}
-.card-container-details::-webkit-scrollbar,
-.card-details-text-scroll::-webkit-scrollbar {
-  display: none;
 }
