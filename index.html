@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="src/css/output.css" />
   </head>
-  <body>
+  <body class="bg-[rgba(242,242,242)] relative pb-[156px] lg:pb-0">
     <header
       class="pt-9.5 pl-[22px] pr-[22px] lg:max-w-[900px] lg:m-auto lg:pl-0 lg:pr-0 2xl:max-w-[1640px] 2xl:pt-10"
     >
@@ -90,5 +90,251 @@
         </div>
       </div>
     </header>
+    <main>
+      <section
+        class="section-wrapper mt-7 flex-row-reverse lg:flex lg:flex-col lg:m-auto lg:mt-10 lg:justify-between lg:max-w-[900px] lg:gap-3 2xl:max-w-[1640px] 2xl:gap-4; 2xl:flex-row-reverse"
+      >
+        <div
+          class="main-heading-section max-sm:mt-7 2xl:max-w-[1225px] 2xl:w-full"
+        >
+          <div
+            class="main-heading-container m-auto max-w-[335px] sm:max-w-full lg:max-w-[900px] relative 2xl:max-w-[1225px]"
+          >
+            <img
+              src="./src/img/main-heading-img.jpg"
+              class="w-full h-[435px] object-cover rounded-3xl lg:h-[760px] 2xl:h-[751px] 2xl:max-w-[1225px]"
+              alt="main-heading-img"
+            />
+            <div
+              class="main-heading-text-wrapper absolute top-8 left-5 right-5 text-center 2xl:mt-15"
+            >
+              <h1 class="font-semibold text-[24px] -[100%] lg:text-[48px]">
+                Find the house you want easily
+              </h1>
+              <p class="text-[14px] font-normal mt-3 lg:text-[16px]">
+                Buy, sell, rent or lease on just one platform
+              </p>
+              <div class="search-bar-container hidden lg:block">
+                <form action="#">
+                  <div
+                    class="search-bar-wrapper relative m-auto max-w-[324px] w-full"
+                  >
+                    <input
+                      class="max-w-[324px] w-full h-12 bg-[#F8F8F8CC] mt-10 rounded-[10px] pl-7 py-[13px] outline-none"
+                      type="search"
+                      placeholder="search..."
+                      name=""
+                      id=""
+                    />
+                    <img
+                      class="absolute w-5 top-[50%] right-[15px] translate-y-[50%]"
+                      src="./src/img/search.svg"
+                      alt="search"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="location-section bg-[rgba(248,248,248,1)] shadow-[0px_4px_25px_rgba(194,194,194,0.31)] rounded-3xl max-sm:mt-5 sm:mt-5 lg:m-0 2xl:max-w-[395px] 2xl:w-full"
+        >
+          <div
+            class="location-container m-auto max-w-[335px] w-full max:md:pb-8 sm:px-8 flex flex-col justify-evenly h-[751px] 2xl:max-w-[395px]"
+          >
+            <div class="location-form">
+              <form action="#">
+                <label
+                  class="font-medium text-[16px] -[100%] text-[rgba(0,0,0,1)]"
+                  for="location"
+                  >Location</label
+                >
+                <select
+                  class="block w-full border border-[#0D9CA436] rounded-[10px] px-3.5 mt-4 h-12"
+                  name="fruits"
+                  id="location"
+                >
+                  <option value="1" selected>All Kanya</option>
+                  <option value="2">All Kanya</option>
+                  <option value="3">All Kanya</option>
+                </select>
+              </form>
+            </div>
+            <div class="property-form">
+              <h3 class="font-medium text-[16px] mb-[13px]">Property</h3>
+              <form action="#">
+                <div class="form-group">
+                  <input
+                    class="accent-green-400"
+                    type="checkbox"
+                    name=""
+                    id="houses"
+                  />
+                  <label for="houses"
+                    >Houses & Apartments for Rent
+                    <span class="text-gray-400!">9548</span></label
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    class="accent-green-400"
+                    type="checkbox"
+                    name=""
+                    id="house"
+                    checked="checked"
+                  />
+                  <label for="house"
+                    >Houses & Apartments for Rent
+                    <span class="text-gray-400!">9548</span></label
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    class="accent-green-400"
+                    type="checkbox"
+                    name=""
+                    id="Land"
+                    checked="checked"
+                  />
+                  <label for="Land"
+                    >Land & Plots for Rent
+                    <span class="text-gray-400!">9548</span></label
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    class="accent-green-400"
+                    type="checkbox"
+                    name=""
+                    id="Lands"
+                  />
+                  <label for="Lands"
+                    >Land & Plots for Rent
+                    <span class="text-gray-400!">9548</span></label
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    class="accent-green-400"
+                    type="checkbox"
+                    name=""
+                    id="Commercial"
+                  />
+                  <label for="Commercial"
+                    >Commercial Property for Rent
+                    <span class="text-gray-400!">9548</span></label
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    class="accent-green-400"
+                    type="checkbox"
+                    name=""
+                    id="Commercials"
+                  />
+                  <label for="Commercials"
+                    >Commercial Property for Sale
+                    <span class="text-gray-400!">9548</span></label
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    class="accent-green-400"
+                    type="checkbox"
+                    name=""
+                    id="Event"
+                    checked="checked"
+                  />
+                  <label for="Event"
+                    >Event Centres, Venues & Worksta
+                    <span class="text-gray-400!">9548</span></label
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    class="accent-green-400"
+                    type="checkbox"
+                    name=""
+                    id="Short"
+                  />
+                  <label for="Short"
+                    >Short Let Property
+                    <span class="text-gray-400!">9548</span></label
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    class="accent-green-400"
+                    type="checkbox"
+                    name=""
+                    id="Land-2"
+                  />
+                  <label for="Land-2"
+                    >Land & Plots for Sale
+                    <span class="text-gray-400!">9548</span></label
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    class="accent-green-400"
+                    type="checkbox"
+                    name=""
+                    id="Commercial-l"
+                  />
+                  <label for="Commercial-l"
+                    >Commercial Property for Rent
+                    <span class="text-gray-400!">9548</span></label
+                  >
+                </div>
+              </form>
+            </div>
+            <div class="price-range-form">
+              <h3 class="font-medium text-[16px] mb-[13px]">Price range</h3>
+              <form action="#">
+                <div class="form-group">
+                  <input
+                    class="accent-green-400"
+                    type="checkbox"
+                    name=""
+                    id="under13"
+                  />
+                  <label for="under13">Under 13 K </label>
+                </div>
+                <div class="form-group">
+                  <input
+                    class="accent-green-400"
+                    type="checkbox"
+                    name=""
+                    id="from13"
+                    checked="checked"
+                  />
+                  <label for="from13">13 - 160 K </label>
+                </div>
+                <div class="form-group">
+                  <input
+                    class="accent-green-400"
+                    type="checkbox"
+                    name=""
+                    id="from160"
+                    checked="checked"
+                  />
+                  <label for="from160">160 K - 6 M </label>
+                </div>
+                <div class="form-group">
+                  <input
+                    class="accent-green-400"
+                    type="checkbox"
+                    name=""
+                    id="from6"
+                  />
+                  <label for="from6">6 - 55 M </label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

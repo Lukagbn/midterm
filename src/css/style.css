@@ -51,3 +51,35 @@ nav ul li span {
   font-family: "Poppins-Regular";
   @apply 2xl:text-[14px];
 }
+h1 {
+  font-family: "Poppins-SemiBold";
+}
+.location-form label {
+  font-family: "Poppins-Medium";
+}
+.property-form form,
+.price-range-form form {
+  @apply flex flex-col gap-2.5;
+}
+.property-form,
+.price-range-form label {
+  @apply text-[14px];
+}
+h1,
+p {
+  @apply text-[rgba(0,0,0,0.8)];
+}
+h3,
+h4 {
+  font-family: "Poppins-Medium";
+}
+.property-form span:before {
+  content: "| ";
+}
+.form-group {
+  @apply block;
+}
+.price-range-form label:after {
+  content: "• 2183 ads";
+  color: #99a1af;
+}
