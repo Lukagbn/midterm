@@ -196,20 +196,8 @@
   .top-\[50\%\] {
     top: 50%;
   }
-  .top-\[79\%\] {
-    top: 79%;
-  }
-  .top-\[80\%\] {
-    top: 80%;
-  }
   .top-\[81\%\] {
     top: 81%;
-  }
-  .top-\[82\%\] {
-    top: 82%;
-  }
-  .top-\[83\%\] {
-    top: 83%;
   }
   .top-\[85\%\] {
     top: 85%;
@@ -262,26 +250,17 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
-  .mt-5 {
-    margin-top: calc(var(--spacing) * 5);
-  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
   }
-  .mt-8 {
-    margin-top: calc(var(--spacing) * 8);
-  }
   .mt-8\! {
     margin-top: calc(var(--spacing) * 8) !important;
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
-  }
-  .mt-17 {
-    margin-top: calc(var(--spacing) * 17);
   }
   .mt-17\.5 {
     margin-top: calc(var(--spacing) * 17.5);
@@ -294,9 +273,6 @@
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
-  }
-  .mb-6 {
-    margin-bottom: calc(var(--spacing) * 6);
   }
   .mb-9 {
     margin-bottom: calc(var(--spacing) * 9);
@@ -315,9 +291,6 @@
   }
   .hidden {
     display: none;
-  }
-  .table {
-    display: table;
   }
   .h-11 {
     height: calc(var(--spacing) * 11);
@@ -367,9 +340,6 @@
   .w-11 {
     width: calc(var(--spacing) * 11);
   }
-  .w-14 {
-    width: calc(var(--spacing) * 14);
-  }
   .w-14\! {
     width: calc(var(--spacing) * 14) !important;
   }
@@ -388,9 +358,6 @@
   .max-w-\[375px\] {
     max-width: 375px;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .translate-y-\[-35\%\] {
     --tw-translate-y: -35%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -404,9 +371,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .auto-cols-\[363px\] {
     grid-auto-columns: 363px;
@@ -557,9 +521,6 @@
   .p-\[13px\] {
     padding: 13px;
   }
-  .px-3 {
-    padding-inline: calc(var(--spacing) * 3);
-  }
   .px-3\.5 {
     padding-inline: calc(var(--spacing) * 3.5);
   }
@@ -571,9 +532,6 @@
   }
   .py-\[13px\] {
     padding-block: 13px;
-  }
-  .pt-2 {
-    padding-top: calc(var(--spacing) * 2);
   }
   .pt-2\.5 {
     padding-top: calc(var(--spacing) * 2.5);
@@ -587,9 +545,6 @@
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
-  .pt-9 {
-    padding-top: calc(var(--spacing) * 9);
-  }
   .pt-9\.5 {
     padding-top: calc(var(--spacing) * 9.5);
   }
@@ -601,9 +556,6 @@
   }
   .pr-\[22px\] {
     padding-right: 22px;
-  }
-  .pb-2 {
-    padding-bottom: calc(var(--spacing) * 2);
   }
   .pb-2\.5 {
     padding-bottom: calc(var(--spacing) * 2.5);
@@ -704,14 +656,8 @@
   .text-amber-100 {
     color: var(--color-amber-100);
   }
-  .text-gray-400 {
-    color: var(--color-gray-400);
-  }
   .text-gray-400\! {
     color: var(--color-gray-400) !important;
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .accent-green-400 {
     accent-color: var(--color-green-400);
@@ -727,10 +673,6 @@
   .shadow-\[0px_4px_25px_rgba\(194\,194\,194\,0\.31\)\] {
     --tw-shadow: 0px 4px 25px var(--tw-shadow-color, rgba(194,194,194,0.31));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-transform {
     transition-property: transform, translate, scale, rotate;
@@ -789,44 +731,14 @@
       padding-inline: calc(var(--spacing) * 8);
     }
   }
-  .lg\:top-\[20\%\] {
-    @media (width >= 64rem) {
-      top: 20%;
-    }
-  }
   .lg\:top-\[24\%\] {
     @media (width >= 64rem) {
       top: 24%;
     }
   }
-  .lg\:top-\[25\%\] {
-    @media (width >= 64rem) {
-      top: 25%;
-    }
-  }
-  .lg\:top-\[27\%\] {
-    @media (width >= 64rem) {
-      top: 27%;
-    }
-  }
-  .lg\:top-\[28\%\] {
-    @media (width >= 64rem) {
-      top: 28%;
-    }
-  }
   .lg\:top-\[29\%\] {
     @media (width >= 64rem) {
       top: 29%;
-    }
-  }
-  .lg\:top-\[70\%\] {
-    @media (width >= 64rem) {
-      top: 70%;
-    }
-  }
-  .lg\:top-\[75\%\] {
-    @media (width >= 64rem) {
-      top: 75%;
     }
   }
   .lg\:top-\[79\%\] {
@@ -949,19 +861,9 @@
       font-size: 48px;
     }
   }
-  .\32 xl\:top-\[30\%\] {
+  .\32 xl\:top-\[8\%\] {
     @media (width >= 96rem) {
-      top: 30%;
-    }
-  }
-  .\32 xl\:top-\[32\%\] {
-    @media (width >= 96rem) {
-      top: 32%;
-    }
-  }
-  .\32 xl\:top-\[34\%\] {
-    @media (width >= 96rem) {
-      top: 34%;
+      top: 8%;
     }
   }
   .\32 xl\:top-\[35\%\] {
@@ -969,64 +871,14 @@
       top: 35%;
     }
   }
-  .\32 xl\:top-\[36\%\] {
-    @media (width >= 96rem) {
-      top: 36%;
-    }
-  }
-  .\32 xl\:top-\[40\%\] {
-    @media (width >= 96rem) {
-      top: 40%;
-    }
-  }
   .\32 xl\:top-\[42\%\] {
     @media (width >= 96rem) {
       top: 42%;
     }
   }
-  .\32 xl\:top-\[43\%\] {
-    @media (width >= 96rem) {
-      top: 43%;
-    }
-  }
-  .\32 xl\:top-\[44\%\] {
-    @media (width >= 96rem) {
-      top: 44%;
-    }
-  }
-  .\32 xl\:top-\[45\%\] {
-    @media (width >= 96rem) {
-      top: 45%;
-    }
-  }
-  .\32 xl\:top-\[50\%\] {
-    @media (width >= 96rem) {
-      top: 50%;
-    }
-  }
-  .\32 xl\:top-\[86\%\] {
-    @media (width >= 96rem) {
-      top: 86%;
-    }
-  }
-  .\32 xl\:top-\[87\%\] {
-    @media (width >= 96rem) {
-      top: 87%;
-    }
-  }
-  .\32 xl\:top-\[88\%\] {
-    @media (width >= 96rem) {
-      top: 88%;
-    }
-  }
   .\32 xl\:mx-0 {
     @media (width >= 96rem) {
       margin-inline: calc(var(--spacing) * 0);
-    }
-  }
-  .\32 xl\:mt-9 {
-    @media (width >= 96rem) {
-      margin-top: calc(var(--spacing) * 9);
     }
   }
   .\32 xl\:mt-15 {
@@ -1531,11 +1383,6 @@ footer ul li a {
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -1592,7 +1439,6 @@ footer ul li a {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
       --tw-scale-x: 1;
