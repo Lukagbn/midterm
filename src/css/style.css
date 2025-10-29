@@ -27,7 +27,7 @@
 }
 * {
   font-family: "Poppins-Regular";
-  color: rgba(0, 0, 0, 1);
+  @apply leading-[100%] text-[rgba(0,0,0,1)];
 }
 nav ul li img {
   @apply w-6;
@@ -86,6 +86,9 @@ h4 {
 .save-icon-wrapper {
   @apply cursor-pointer;
 }
+.price {
+  @apply text-[14px];
+}
 .price span {
   font-family: "Poppins-Medium";
 }
@@ -116,4 +119,25 @@ h2 {
 footer ul li a {
   font-family: "Poppins-Medium";
   @apply text-[16px] text-[rgba(255,255,255,1)] 2xl:text-[14px];
+}
+.card {
+  @apply px-4;
+}
+/* details */
+.card-details-container p {
+  font-family: "Poppins-Medium";
+}
+/* hide overflow */
+.card-details-categories-wrapper p {
+  @apply leading-[23px];
+}
+.card-container-details,
+.card-details-text-scroll {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.card-container-details::-webkit-scrollbar,
+.card-details-text-scroll::-webkit-scrollbar {
+  display: none;
 }
