@@ -4,6 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="src/css/output.css" />
   </head>
-  <body></body>
+  <body>
+    <header
+      class="pt-9.5 pl-[22px] pr-[22px] lg:max-w-[900px] lg:m-auto lg:pl-0 lg:pr-0 2xl:max-w-[1640px] 2xl:pt-10"
+    >
+      <nav
+        class="fixed z-1 flex bottom-0 left-0 w-full bg-[rgba(255,255,255,1)] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.25)] rounded-tl-3xl rounded-tr-3xl pt-3 pb-[15px] lg:hidden"
+      >
+        <ul class="flex max-w-[335px] w-full justify-between m-auto">
+          <li>
+            <a href="#"
+              ><img src="./src/img/home-icon.svg" alt="home-icon" />Home</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./src/img/discover-icon.svg"
+                alt="discover-icon"
+              />Discover</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div
+                class="add-icon-wrapper absolute flex flex-col items-center translate-y-[-35%] gap-[5px]"
+              >
+                <img
+                  class="w-14! rounded-xl bg-green-400"
+                  src="./src/img/add-icon.svg"
+                  alt="add-icon"
+                />
+                <span>Sell</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./src/img/message-icon.svg"
+                alt="message-icon"
+              />Message</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./src/img/user-icon.svg" alt="user-icon" />Profile</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="header-wrapper flex justify-between items-center">
+        <a href="./index.html"
+          ><img
+            class="w-11 h-11 cursor-pointer"
+            src="./src/img/nav-logo.png"
+            alt="nav-logo"
+        /></a>
+        <nav class="lg-nav hidden lg:flex">
+          <ul class="flex gap-12">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Sign In</a></li>
+          </ul>
+        </nav>
+        <div
+          class="search rounded-[50%] p-[13px] bg-[rgba(248, 248, 248)] shadow-[0px_4px_25px_rgba(194,194,194,0.31)] cursor-pointer lg:hidden"
+        >
+          <a href="#"
+            ><img
+              class="w-[18px] h-[18px]"
+              src="./src/img/search.svg"
+              alt="search icon"
+          /></a>
+        </div>
+        <div class="sell-box max-lg:hidden">
+          <button
+            class="px-[26px] py-[13px] bg-[#29B24E] text-[#ffffff]! rounded-xl text-[14px]"
+          >
+            Sell Something
+          </button>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
