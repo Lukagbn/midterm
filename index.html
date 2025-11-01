@@ -10,6 +10,13 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="src/css/output.css" />
+    <!-- preload main image -->
+    <link
+      rel="preload"
+      as="image"
+      href="./src/img/main-heading-img.webp"
+      fetchpriority="high"
+    />
     <!-- google meta tags -->
     <meta name="description" content="Find the house you want easily" />
     <meta name="rating" content="adult" />
@@ -85,7 +92,7 @@
         <a href="./index.html"
           ><img
             class="w-11 h-11 cursor-pointer"
-            src="./src/img/nav-logo.png"
+            src="./src/img/nav-logo.webp"
             alt="nav-logo"
         /></a>
         <nav class="lg-nav hidden lg:flex">
@@ -126,10 +133,13 @@
             class="main-heading-container m-auto max-w-[335px] sm:max-w-full lg:max-w-[900px] relative 2xl:max-w-[1225px]"
           >
             <img
-              src="./src/img/main-heading-img.jpg"
+              src="./src/img/main-heading-img.webp"
+              alt="Main heading image"
+              fetchpriority="high"
+              decoding="async"
               class="w-full h-[435px] object-cover rounded-3xl lg:h-[760px] 2xl:h-[751px] 2xl:max-w-[1225px]"
-              alt="main-heading-img"
             />
+
             <div
               class="main-heading-text-wrapper absolute top-8 left-5 right-5 text-center 2xl:mt-15"
             >
@@ -375,7 +385,7 @@
                 <a href="./details.html">
                   <img
                     class="rounded-[20px] h-[202px] w-full"
-                    src="./src/img/card-img-1.jpg"
+                    src="./src/img/card-img-1.webp"
                     alt="card-img"
                   />
                 </a>
@@ -424,7 +434,7 @@
                 <a href="./details.html">
                   <img
                     class="rounded-[20px] h-[202px] w-full"
-                    src="./src/img/card-img-3.jpg"
+                    src="./src/img/card-img-3.webp"
                     alt="card-img"
                   />
                 </a>
@@ -473,7 +483,7 @@
                 <a href="./details.html">
                   <img
                     class="rounded-[20px] h-[202px] w-full"
-                    src="./src/img/card-img-2.jpg"
+                    src="./src/img/card-img-2.webp"
                     alt="card-img"
                   />
                 </a>
@@ -522,7 +532,7 @@
                 <a href="./details.html">
                   <img
                     class="rounded-[20px] h-[202px] w-full"
-                    src="./src/img/card-img-1.jpg"
+                    src="./src/img/card-img-1.webp"
                     alt="card-img"
                   />
                 </a>
@@ -571,7 +581,7 @@
                 <a href="./details.html">
                   <img
                     class="rounded-[20px] h-[202px] w-full"
-                    src="./src/img/card-img-2.jpg"
+                    src="./src/img/card-img-2.webp"
                     alt="card-img"
                   />
                 </a>
@@ -620,7 +630,7 @@
                 <a href="./details.html">
                   <img
                     class="rounded-[20px] h-[202px] w-full"
-                    src="./src/img/card-img-3.jpg"
+                    src="./src/img/card-img-3.webp"
                     alt="card-img"
                   />
                 </a>
@@ -669,7 +679,7 @@
                 <a href="./details.html">
                   <img
                     class="rounded-[20px] h-[202px] w-full"
-                    src="./src/img/card-img-2.jpg"
+                    src="./src/img/card-img-2.webp"
                     alt="card-img"
                   />
                 </a>
@@ -718,7 +728,7 @@
                 <a href="./details.html">
                   <img
                     class="rounded-[20px] h-[202px] w-full"
-                    src="./src/img/card-img-1.jpg"
+                    src="./src/img/card-img-1.webp"
                     alt="card-img"
                   />
                 </a>
