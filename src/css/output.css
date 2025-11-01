@@ -193,6 +193,9 @@
   .top-8 {
     top: calc(var(--spacing) * 8);
   }
+  .top-\[13\%\] {
+    top: 13%;
+  }
   .top-\[29\%\] {
     top: 29%;
   }
@@ -843,9 +846,19 @@
       padding-inline: calc(var(--spacing) * 8);
     }
   }
+  .lg\:top-\[2\%\] {
+    @media (width >= 64rem) {
+      top: 2%;
+    }
+  }
   .lg\:top-\[25\%\] {
     @media (width >= 64rem) {
       top: 25%;
+    }
+  }
+  .lg\:top-\[29\%\] {
+    @media (width >= 64rem) {
+      top: 29%;
     }
   }
   .lg\:top-\[30\%\] {
