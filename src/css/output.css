@@ -193,9 +193,6 @@
   .top-8 {
     top: calc(var(--spacing) * 8);
   }
-  .top-\[13\%\] {
-    top: 13%;
-  }
   .top-\[29\%\] {
     top: 29%;
   }
@@ -846,11 +843,6 @@
       padding-inline: calc(var(--spacing) * 8);
     }
   }
-  .lg\:top-\[2\%\] {
-    @media (width >= 64rem) {
-      top: 2%;
-    }
-  }
   .lg\:top-\[25\%\] {
     @media (width >= 64rem) {
       top: 25%;
@@ -859,11 +851,6 @@
   .lg\:top-\[29\%\] {
     @media (width >= 64rem) {
       top: 29%;
-    }
-  }
-  .lg\:top-\[30\%\] {
-    @media (width >= 64rem) {
-      top: 30%;
     }
   }
   .lg\:top-\[79\%\] {
@@ -996,9 +983,24 @@
       font-size: 48px;
     }
   }
+  .\32 xl\:top-\[34\%\] {
+    @media (width >= 96rem) {
+      top: 34%;
+    }
+  }
   .\32 xl\:top-\[35\%\] {
     @media (width >= 96rem) {
       top: 35%;
+    }
+  }
+  .\32 xl\:top-\[39\%\] {
+    @media (width >= 96rem) {
+      top: 39%;
+    }
+  }
+  .\32 xl\:top-\[40\%\] {
+    @media (width >= 96rem) {
+      top: 40%;
     }
   }
   .\32 xl\:top-\[42\%\] {
@@ -1154,11 +1156,6 @@
   .\32 xl\:p-0 {
     @media (width >= 96rem) {
       padding: calc(var(--spacing) * 0);
-    }
-  }
-  .\32 xl\:p-8 {
-    @media (width >= 96rem) {
-      padding: calc(var(--spacing) * 8);
     }
   }
   .\32 xl\:pt-10 {
