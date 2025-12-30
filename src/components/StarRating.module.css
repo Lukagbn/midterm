@@ -1,0 +1,26 @@
+.starContainer {
+  position: relative;
+  width: max-content;
+}
+.starOuter {
+  color: grey;
+  font-size: 25px;
+}
+.starInner {
+  position: absolute;
+  color: gold;
+  font-size: 25px;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.rating {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.number {
+  padding-top: 5px;
+}

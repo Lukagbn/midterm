@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import StarRating from "@/components/StarRating";
 
 function Page() {
   const [product, setProduct] = useState(null);
@@ -24,6 +25,7 @@ function Page() {
           <div className={styles.cardBody}>
             <p className={styles.location}>Ships to ukraine</p>
             <h3>{item.title}</h3>
+            <StarRating rating={item.rating.rate} count={item.rating.count} />
             <Link href={`/products/${item.id}`}>
               {" "}
               <h2>${item.price}</h2>
