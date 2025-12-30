@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.footer ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 14px 0px #cccc;
+  width: 100%;
+  gap: 20px;
+}
+.date {
+  margin-left: auto;
+}
