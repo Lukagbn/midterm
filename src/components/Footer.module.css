@@ -42,3 +42,11 @@
     font-size: 19px;
   }
 }
+@media (min-width: 1400px) {
+  .footer ul {
+    display: flex;
+  }
+  .date {
+    margin-left: auto;
+  }
+}
