@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import layout from "@/app/layout.module.css";
 
 function Footer() {
   const FOOTER_LIST = [
@@ -25,7 +26,7 @@ function Footer() {
     },
   ];
   return (
-    <footer className={styles.footer}>
+    <footer className={`${styles.footer} ${layout.container}`}>
       <ul>
         {FOOTER_LIST.map((item) => (
           <li key={item.name} className={item.className}>

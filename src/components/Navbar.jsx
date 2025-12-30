@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import layout from "@/app/layout.module.css";
 
 function Navbar() {
   const NAVBAR_LIST = [
@@ -22,22 +23,24 @@ function Navbar() {
     },
   ];
   return (
-    <ul className={styles.navList}>
-      {NAVBAR_LIST.map((item) => (
-        <li key={item.name}>
-          <Link href={`${item.url}`}>
-            {item.name}
-            <Image
-              className={item.className}
-              width={20}
-              height={20}
-              src={`${item.img}`}
-              alt="Picture of the author"
-            />
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <header className={`${styles.header} ${layout.container}`}>
+      <ul>
+        {NAVBAR_LIST.map((item) => (
+          <li key={item.name}>
+            <Link href={`${item.url}`}>
+              {item.name}
+              <Image
+                className={item.className}
+                width={18}
+                height={18}
+                src={`${item.img}`}
+                alt="Picture of the author"
+              />
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </header>
   );
 }
 
