@@ -45,12 +45,3 @@ function page() {
 }
 
 export default page;
-// <section className={layout.container}>
-//   <h1>{singleProduct.title}</h1>
-//   <Image
-//     width={300}
-//     height={300}
-//     alt={singleProduct.title}
-//     src={singleProduct.image}
-//   />
-// </section>
