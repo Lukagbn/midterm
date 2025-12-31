@@ -27,10 +27,7 @@ function Page() {
             <div className={styles.cardBody}>
               <p className={styles.location}>Ships to ukraine</p>
               <h3>{item.title}</h3>
-              <StarRating
-                rating={item.rating.rate}
-                count={item.rating.count}
-              />{" "}
+              <StarRating rating={item.rating.rate} count={item.rating.count} />
               <h2>${item.price}</h2>
             </div>
           </div>
