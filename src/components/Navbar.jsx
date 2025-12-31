@@ -7,7 +7,12 @@ import layout from "@/app/layout.module.css";
 
 function Navbar() {
   const NAVBAR_LIST = [
-    { name: "Home", url: "/", img: "/home.svg", className: styles.home },
+    {
+      name: "Products",
+      url: "/",
+      img: "/products.svg",
+      className: styles.products,
+    },
     {
       name: "Profile",
       url: "/profile",
@@ -15,12 +20,6 @@ function Navbar() {
       className: styles.profile,
     },
     { name: "Cart", url: "/cart", img: "/cart.svg", className: styles.cart },
-    {
-      name: "Products",
-      url: "/products",
-      img: "/products.svg",
-      className: styles.products,
-    },
   ];
   return (
     <header className={`${styles.header} ${layout.container}`}>
@@ -34,7 +33,7 @@ function Navbar() {
                 width={18}
                 height={18}
                 src={`${item.img}`}
-                alt="Picture of the author"
+                alt={`${item.name}`}
               />
             </Link>
           </li>
