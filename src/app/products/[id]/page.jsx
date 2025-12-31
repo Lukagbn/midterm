@@ -14,7 +14,7 @@ function page() {
       .then((res) => res.json())
       .then((resp) => setSingleProduct(resp));
   }, []);
-  if (!singleProduct) {
+  if (singleProduct === null) {
     return <div>loading product</div>;
   }
   return (
@@ -31,6 +31,7 @@ function page() {
         </div>
         <div className={styles.cardBody}>
           <StarRating
+            className={styles.star}
             rating={singleProduct.rating.rate}
             count={singleProduct.rating.count}
           />
