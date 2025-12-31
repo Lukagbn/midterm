@@ -87,14 +87,18 @@
     max-width: 400px;
     width: 100%;
     justify-content: space-between;
+    font-size: 18px;
   }
   .cardBody p {
     font-size: 20px;
   }
   .cardBody h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
   .productPrice {
     align-self: flex-end;
+  }
+  .star {
+    font-size: 30px !important;
   }
 }
