@@ -4,9 +4,7 @@
   padding-block: 10px;
   gap: 10px;
   grid-template-columns: repeat(2, auto);
-  /* grid-template-columns: repeat(2, 1fr); */
   border-bottom: 1px solid #ccc;
-  /* padding: 15px; */
 }
 .cartHeadWrapper {
   display: flex;
@@ -32,7 +30,6 @@
   display: flex;
   max-width: 500px;
   width: 100%;
-  /* justify-content: space-between; */
   gap: 20px;
   align-items: center;
 }
@@ -77,11 +74,11 @@
   .cartHeadWrapper {
     flex-direction: row;
     align-items: center;
-    max-width: 300px;
+    max-width: 500px;
     gap: 30px;
   }
   .cartItem img {
-    width: 140px;
-    height: 100px;
+    width: 130px;
+    height: 120px;
   }
 }
