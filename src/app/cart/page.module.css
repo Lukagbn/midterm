@@ -1,0 +1,15 @@
+.cartContainer {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.cartItemsHeader {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin: auto;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.cartItemsHeader div:nth-of-type(2) {
+  text-align: center;
+}
