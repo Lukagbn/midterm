@@ -9,7 +9,7 @@ function page() {
   const fetchCartData = async () => {
     const res = await fetch("https://fakestoreapi.com/carts/2");
     const response = await res.json();
-    return setCartData(response);
+    return setCartData(response.products);
   };
   useEffect(() => {
     fetchCartData();
@@ -24,11 +24,12 @@ function page() {
         <div>QUANTITY</div>
         <div>PRICE</div>
       </div>
-      {cartData.products.map((item) => (
+      {cartData.map((item) => (
         <CartItem
           key={item.productId}
-          item={item.productId}
-          quantity={item.quantity}
+          item={item}
+          cartData={cartData}
+          setCartData={setCartData}
         />
       ))}
     </main>

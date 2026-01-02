@@ -4,11 +4,13 @@ import styles from "./CartItem.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-function CartItem({ item, quantity }) {
+function CartItem({ item, cartData, setCartData }) {
   const [cartItem, setCartItem] = useState(null);
-  const [number, setnumber] = useState(quantity);
+  const [number, setnumber] = useState(item.quantity);
   const fetchCartItem = async () => {
-    const res = await fetch(`https://fakestoreapi.com/products/${item}`);
+    const res = await fetch(
+      `https://fakestoreapi.com/products/${item.productId}`
+    );
     const resp = await res.json();
     return setCartItem(resp);
   };
@@ -17,6 +19,15 @@ function CartItem({ item, quantity }) {
       setnumber(number - 1);
     } else {
       setnumber(number + 1);
+    }
+  };
+  const handleDelete = async (id) => {
+    const resposne = await fetch("https://fakestoreapi.com/carts/1", {
+      method: "DELETE",
+    });
+    const result = await resposne.json();
+    if (result?.date) {
+      setCartData(cartData.filter((item) => item.productId !== id));
     }
   };
   useEffect(() => {
@@ -54,7 +65,7 @@ function CartItem({ item, quantity }) {
           <button
             disabled={number === 10}
             className={styles.substract}
-            onClick={handleClick}
+            onClick={(event) => handleClick(event.target.innerText)}
           >
             +
           </button>
@@ -63,7 +74,7 @@ function CartItem({ item, quantity }) {
           <span>${Math.floor(cartItem.price * number)}</span>
         </div>
         <div>
-          <button>🗑️</button>
+          <button onClick={() => handleDelete(item.productId)}>🗑️</button>
         </div>
       </div>
     </div>
