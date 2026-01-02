@@ -74,7 +74,9 @@ function CartItem({ item, cartData, setCartData }) {
           <span>${Math.floor(cartItem.price * number)}</span>
         </div>
         <div>
-          <button onClick={() => handleDelete(item.productId)}>🗑️</button>
+          <button onClick={() => handleDelete(item.productId)}>
+            <Image src={"/bin.svg"} width={20} height={20} alt="bin" />
+          </button>
         </div>
       </div>
     </div>
