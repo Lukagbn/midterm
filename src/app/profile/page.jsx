@@ -19,7 +19,7 @@ const page = async () => {
         <li>
           <span>phone:</span> {user.phone}
         </li>
-        <h2>City:</h2>
+        <h2>Location:</h2>
         <ul>
           <li>
             <span>city:</span> {user.address.city}

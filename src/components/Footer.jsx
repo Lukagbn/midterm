@@ -3,6 +3,9 @@ import styles from "./Footer.module.css";
 import layout from "@/app/layout.module.css";
 
 function Footer() {
+  const newDate = new Date();
+  const currentYear = newDate.getFullYear();
+
   const FOOTER_LIST = [
     {
       name: "Condition of Use",
@@ -20,11 +23,12 @@ function Footer() {
       className: styles.interest,
     },
     {
-      name: `©Date`,
+      name: `©2025 - ${currentYear} All Rights Reserved`,
       url: "/",
       className: styles.date,
     },
   ];
+
   return (
     <footer className={`${styles.footer} ${layout.container}`}>
       <ul>
