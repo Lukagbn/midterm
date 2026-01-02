@@ -55,6 +55,12 @@
   scale: 1.5;
   background-color: transparent;
 }
+.cartItem button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
 @media (min-width: 600px) {
   .cartItem {
     padding-block: 20px;
@@ -77,7 +83,7 @@
     max-width: 500px;
     gap: 30px;
   }
-  .cartItem img {
+  .cartHeadWrapper img {
     width: 130px;
     height: 120px;
   }
