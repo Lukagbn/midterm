@@ -13,3 +13,23 @@
 .cartItemsHeader div:nth-of-type(2) {
   text-align: center;
 }
+.loadingData {
+  position: absolute;
+  font-size: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: 1s hide ease-in-out infinite;
+  color: #ffff;
+}
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
