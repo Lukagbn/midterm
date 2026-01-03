@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import layout from "@/app/layout.module.css";
 import styles from "./page.module.css";
-import CartItem from "@/components/CartItem";
+import CartItem from "@/components/CartItem/CartItem";
 
 function page() {
   const [cartData, setCartData] = useState(null);

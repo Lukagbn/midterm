@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import layout from "@/app/layout.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import StarRating from "@/components/StarRating";
+import StarRating from "@/components/StarRating/StarRating";
 
 function Page() {
   const [product, setProduct] = useState(null);

@@ -9,22 +9,18 @@ function Footer() {
   const FOOTER_LIST = [
     {
       name: "Condition of Use",
-      url: "/",
       className: styles.condition,
     },
     {
       name: "Privacy Notice",
-      url: "/",
       className: styles.privacy,
     },
     {
       name: "Interest-Based Ads",
-      url: "/",
       className: styles.interest,
     },
     {
       name: `©2025 - ${currentYear} All Rights Reserved`,
-      url: "/",
       className: styles.date,
     },
   ];

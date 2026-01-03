@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import { useParams } from "next/navigation";
 import layout from "@/app/layout.module.css";
 import Image from "next/image";
-import StarRating from "@/components/StarRating";
+import StarRating from "@/components/StarRating/StarRating";
 
 function page() {
   const { id } = useParams();
