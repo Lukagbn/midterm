@@ -14,8 +14,8 @@ function page() {
       .then((res) => res.json())
       .then((resp) => setSingleProduct(resp));
   }, []);
-  if (singleProduct === null) {
-    return <div>loading product</div>;
+  if (!singleProduct) {
+    return <div className={styles.loadingData}>Loading product</div>;
   }
   return (
     <section className={`${layout.container} ${styles.cardSection}`}>

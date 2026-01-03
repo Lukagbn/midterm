@@ -8,12 +8,15 @@ import StarRating from "@/components/StarRating/StarRating";
 
 function Page() {
   const [product, setProduct] = useState(null);
+  const fetchProducts = async () => {
+    const res = await fetch("https://fakestoreapi.com/products");
+    const result = await res.json();
+    return setProduct(result);
+  };
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((result) => setProduct(result));
+    fetchProducts();
   }, []);
-  if (product === null) {
+  if (!product) {
     return (
       <h2 className={styles.loadingData}>products loading, please wait...</h2>
     );

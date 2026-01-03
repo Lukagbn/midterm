@@ -15,7 +15,7 @@ function page() {
     fetchCartData();
   }, []);
   if (!cartData) {
-    return <div>fetching cart</div>;
+    return <div className={styles.loadingData}>loading cart</div>;
   }
   return (
     <main className={`${styles.cartContainer} ${layout.container}`}>
