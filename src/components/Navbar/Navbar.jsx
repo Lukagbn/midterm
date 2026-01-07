@@ -1,10 +1,13 @@
+"use client";
 import React from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import layout from "@/app/layout.module.css";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
+  const pathname = usePathname();
   const NAVBAR_LIST = [
     {
       name: "Products",
@@ -24,7 +27,10 @@ function Navbar() {
     <header className={`${styles.header} ${layout.container}`}>
       <ul>
         {NAVBAR_LIST.map((item) => (
-          <li key={item.name}>
+          <li
+            key={item.name}
+            className={`${pathname === item.url ? styles.active : null}`}
+          >
             <Link href={`${item.url}`}>
               {item.name}
               <Image
