@@ -39,12 +39,14 @@ function CartItem({ item, cartData, setCartData }) {
   return (
     <div className={styles.cartItem}>
       <div className={styles.cartHeadWrapper}>
-        <Image
-          src={cartItem.image}
-          width={80}
-          height={90}
-          alt={cartItem.title}
-        />
+        <Link href={`/products/details/${item.productId}`}>
+          <Image
+            src={cartItem.image}
+            width={80}
+            height={90}
+            alt={cartItem.title}
+          />
+        </Link>
         <div className={styles.cartImgTextWrapper}>
           <p>{cartItem.title}</p>
           <h5>{cartItem.category}</h5>
@@ -64,14 +66,14 @@ function CartItem({ item, cartData, setCartData }) {
           <p>{number}</p>
           <button
             disabled={number === 10}
-            className={styles.substract}
+            className={styles.subtract}
             onClick={(event) => handleClick(event.target.innerText)}
           >
             +
           </button>
         </div>
         <div>
-          <span>${Math.floor(cartItem.price * number)}</span>
+          <span>${(cartItem.price * number).toFixed(1)}</span>
         </div>
         <div>
           <button onClick={() => handleDelete(item.productId)}>
