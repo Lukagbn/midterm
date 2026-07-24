@@ -8,6 +8,7 @@ import StarRating from "@/components/StarRating/StarRating";
 import { useAppDispatch, useAppSelector } from "@/lib/hook";
 import Link from "next/link";
 import { addToCart } from "@/lib/slices/cartSlice";
+import Loader from "@/components/Loader/Loader";
 
 function page() {
   const { id } = useParams();
@@ -32,16 +33,7 @@ function page() {
       .then((resp) => setSingleProduct(resp));
   }, []);
   if (!singleProduct) {
-    return (
-      <h2 className={styles.loadingMessage}>
-        loading, please wait{" "}
-        <div className={styles.dotContainer}>
-          <span className={styles.dot}>.</span>
-          <span className={styles.dot}>.</span>
-          <span className={styles.dot}>.</span>
-        </div>
-      </h2>
-    );
+    return <Loader />;
   }
   return (
     <section className={`${layout.container} ${styles.cardSection}`}>

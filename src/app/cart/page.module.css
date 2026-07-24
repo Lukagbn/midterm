@@ -169,8 +169,11 @@
   text-decoration: underline;
 }
 .loadingMessage {
+  margin-top: 30vh;
   color: #ffff;
-  margin: auto;
+  margin-inline: auto;
+  max-width: fit-content;
+  display: flex;
 }
 .checkOut {
   display: flex;

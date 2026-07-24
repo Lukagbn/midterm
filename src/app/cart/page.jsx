@@ -21,7 +21,6 @@ function page() {
   const [checkOut, setCheckOut] = useState(false);
   const [cvv, setCvv] = useState("");
   const [value, setValue] = useState("");
-  const [date, setDate] = useState();
 
   const totalPrice = () => {
     return cartProducts.reduce(
@@ -67,23 +66,27 @@ function page() {
   }, []);
   if (!hasToken) {
     return (
-      <h2 className={styles.loadingMessage}>
-        you must{" "}
-        <Link className={styles.btnLink} href={"/login"}>
-          log in
-        </Link>{" "}
-        to continiue!
-      </h2>
+      <div className={styles.loadingMessage}>
+        <h2>
+          you must{" "}
+          <Link className={styles.btnLink} href={"/login"}>
+            log in
+          </Link>{" "}
+          to continiue!
+        </h2>
+      </div>
     );
   }
   if (hasToken && cartProducts.length === 0) {
     return (
-      <h2 className={styles.loadingMessage}>
-        Cart is empty.{" "}
-        <Link className={styles.btnLink} href={"/"}>
-          Add products
-        </Link>
-      </h2>
+      <div className={styles.loadingMessage}>
+        <h2>
+          Cart is empty.{" "}
+          <Link className={styles.btnLink} href={"/"}>
+            Add products
+          </Link>
+        </h2>
+      </div>
     );
   }
   return (

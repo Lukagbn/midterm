@@ -7,6 +7,7 @@ import Link from "next/link";
 import StarRating from "@/components/StarRating/StarRating";
 import { useAppDispatch, useAppSelector } from "@/lib/hook";
 import { addToCart } from "@/lib/slices/cartSlice";
+import Loader from "@/components/Loader/Loader";
 
 function Page() {
   const dispatch = useAppDispatch();
@@ -29,7 +30,6 @@ function Page() {
   };
   const handleAddToCart = (item) => {
     dispatch(addToCart(item));
-    console.log(item);
   };
   const filterProducts = (item) => {
     const category = item.target.value;
@@ -46,19 +46,10 @@ function Page() {
     fetchProducts();
   }, []);
   if (!products) {
-    return (
-      <h2 className={styles.loadingMessage}>
-        loading, please wait{" "}
-        <div className={styles.dotContainer}>
-          <span className={styles.dot}>.</span>
-          <span className={styles.dot}>.</span>
-          <span className={styles.dot}>.</span>
-        </div>
-      </h2>
-    );
+    return <Loader />;
   }
   return (
-    <main className={`${layout.container} ${styles.section}`}>
+    <section className={`${layout.container} ${styles.section}`}>
       <div className={styles.filterProductsContainer}>
         <span>Filter Products By Category:</span>
         <select
@@ -107,7 +98,7 @@ function Page() {
           </div>
         ))}
       </div>
-    </main>
+    </section>
   );
 }
 

@@ -6,6 +6,7 @@ import { redirect } from "next/navigation";
 import Image from "next/image";
 import { useAppDispatch } from "@/lib/hook";
 import { deleteUser } from "@/lib/slices/userSlice";
+import Loader from "@/components/Loader/Loader";
 function page() {
   const [userData, setUserData] = useState(null);
   const dispatch = useAppDispatch();
@@ -31,17 +32,7 @@ function page() {
     fetchData();
     checkUser();
   }, []);
-  if (!userData)
-    return (
-      <h2 className={styles.loadingMessage}>
-        loading, please wait{" "}
-        <div className={styles.dotContainer}>
-          <span className={styles.dot}>.</span>
-          <span className={styles.dot}>.</span>
-          <span className={styles.dot}>.</span>
-        </div>
-      </h2>
-    );
+  if (!userData) return <Loader />;
   return (
     <main className={`${layout.container} ${styles.profileContainer}`}>
       <div className={styles.profileCard}>
