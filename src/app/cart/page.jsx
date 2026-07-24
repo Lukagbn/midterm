@@ -19,6 +19,10 @@ function page() {
   const [hasToken, setHasToken] = useState(false);
   const [discount, setDiscount] = useState(0);
   const [checkOut, setCheckOut] = useState(false);
+  const [cvv, setCvv] = useState("");
+  const [value, setValue] = useState("");
+  const [date, setDate] = useState();
+
   const totalPrice = () => {
     return cartProducts.reduce(
       (total, item) =>
@@ -50,6 +54,14 @@ function page() {
   const handleDecrease = (item) => {
     dispatch(decreaseQuantity(item));
   };
+  const handleCVV = (e) => {
+    const cvv = e.target.value.replace(/[^0-9]/g, "");
+    setCvv(cvv);
+  };
+  const handleNumber = (e) => {
+    const onlyNums = e.target.value.replace(/[^0-9]/g, "");
+    setValue(onlyNums);
+  };
   useEffect(() => {
     checkUser();
   }, []);
@@ -68,7 +80,7 @@ function page() {
     return (
       <h2 className={styles.loadingMessage}>
         Cart is empty.{" "}
-        <Link className={styles.btnLink} href={"/products"}>
+        <Link className={styles.btnLink} href={"/"}>
           Add products
         </Link>
       </h2>
@@ -139,11 +151,29 @@ function page() {
             </p>
             <div>
               <label>Card Numbers</label>
-              <input className={styles.numberInput} type="text" required />
+              <input
+                className={styles.numberInput}
+                type="text"
+                required
+                inputMode="numeric"
+                pattern="[0-9]*"
+                value={value}
+                onChange={handleNumber}
+                maxLength={9}
+              />
             </div>
             <div>
               <label>CVV</label>
-              <input className={styles.numberInput} type="text" required />
+              <input
+                className={styles.numberInput}
+                type="text"
+                required
+                inputMode="numeric"
+                pattern="[0-9]*"
+                value={cvv}
+                onChange={handleCVV}
+                maxLength={3}
+              />
             </div>
             <div>
               <label>Expire Date</label>
@@ -168,10 +198,10 @@ function page() {
           />
           <label>Promo Code</label>
         </div>
-        <h3>
-          Total: ${totalPrice().toFixed(2)}
-          {discount ? ` (With ${discount}% discount)` : ""}
-        </h3>
+        <div className={styles.discount}>
+          <h3>Total: ${totalPrice().toFixed(2)}</h3>
+          <p> {discount ? ` (With ${discount}% discount)` : ""}</p>
+        </div>
         <button onClick={() => setCheckOut(!checkOut)}>
           Proceed to checkout
         </button>

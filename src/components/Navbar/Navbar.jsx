@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -18,7 +18,7 @@ function Navbar() {
   const NAVBAR_LIST = [
     {
       name: "Products",
-      url: "/products",
+      url: "/",
       img: "/products.svg",
       className: styles.products,
     },

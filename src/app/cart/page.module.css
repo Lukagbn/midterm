@@ -111,6 +111,10 @@
   align-items: center;
   flex-direction: column;
 }
+.cartSummary .discount {
+  height: 37px;
+  display: flex;
+}
 .cartSummary button {
   cursor: pointer;
   background: linear-gradient(135deg, #ffd86b, #ff9f43);
@@ -315,8 +319,18 @@
     padding: 12px;
     font-size: 16px;
   }
-  .cartSummary h3 {
-    font-size: 18px;
+  .cartSummary .discount {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 120px;
+    width: 100%;
+    height: 60px;
+  }
+  .cartSummary .discount h3 {
+    font-size: 16px;
+  }
+  .cartSummary .discount p {
+    font-size: 13px;
   }
 }
 @media (min-width: 1300px) {

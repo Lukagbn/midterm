@@ -43,7 +43,7 @@ function page() {
       </h2>
     );
   return (
-    <section className={`${layout.container} ${styles.profileContainer}`}>
+    <main className={`${layout.container} ${styles.profileContainer}`}>
       <div className={styles.profileCard}>
         <div className={styles.avatarWrapper}>
           <Image
@@ -90,7 +90,7 @@ function page() {
           Log out
         </button>
       </div>
-    </section>
+    </main>
   );
 }
 

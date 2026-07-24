@@ -58,10 +58,11 @@ function Page() {
     );
   }
   return (
-    <section className={`${layout.container} ${styles.section}`}>
+    <main className={`${layout.container} ${styles.section}`}>
       <div className={styles.filterProductsContainer}>
         <span>Filter Products By Category:</span>
         <select
+          aria-label="filter"
           className={styles.filterProducts}
           name="category"
           id="category"
@@ -78,7 +79,7 @@ function Page() {
         {filteredProducts?.map((item) => (
           <div key={item.id}>
             <div className={styles.card}>
-              <Link href={`/products/details/${item.id}`}>
+              <Link href={`/details/${item.id}`}>
                 <Image
                   src={item.image}
                   width={150}
@@ -106,7 +107,7 @@ function Page() {
           </div>
         ))}
       </div>
-    </section>
+    </main>
   );
 }
 
